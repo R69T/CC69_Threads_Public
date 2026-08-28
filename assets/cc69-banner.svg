@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="0.52" stop-color="#161b22"/>
+      <stop offset="1" stop-color="#1f6feb"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="360" rx="28" fill="url(#bg)"/>
+  <circle cx="1060" cy="80" r="160" fill="#58a6ff" opacity="0.12"/>
+  <circle cx="1140" cy="300" r="210" fill="#a371f7" opacity="0.10"/>
+  <text x="70" y="105" font-family="Segoe UI, Arial, sans-serif" font-size="64" font-weight="700" fill="#ffffff">CC69</text>
+  <text x="70" y="170" font-family="Segoe UI, Arial, sans-serif" font-size="38" font-weight="600" fill="#dbeafe">Social Platform Manager</text>
+  <text x="70" y="225" font-family="Segoe UI, Arial, sans-serif" font-size="25" fill="#c9d1d9">先從 Threads 開始，讓追蹤關係整理更清楚、更集中。</text>
+  <rect x="70" y="265" width="230" height="50" rx="25" fill="#238636"/>
+  <text x="185" y="298" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff">Threads · 現已支援</text>
+  <rect x="320" y="265" width="300" height="50" rx="25" fill="#30363d"/>
+  <text x="470" y="298" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="600" fill="#d0d7de">YouTube · 規劃中</text>
+  <rect x="640" y="265" width="270" height="50" rx="25" fill="#30363d"/>
+  <text x="775" y="298" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="600" fill="#d0d7de">Twitch · 規劃中</text>
+</svg>
