@@ -14,15 +14,21 @@ CC69 Threads Manager 是一套 Windows Threads 關係管理工具，將常用的
 
 ## 使用方式
 
-1. 到 **Releases** 下載最新的 `CC69_Threads_Manager.exe`。
-2. 第一次開啟後，到「快速檢查」完成 Threads 登入。
-3. 若 Threads 顯示「儲存登入資訊」，請完成該步驟；CC69 會等待登入流程真正完成後再繼續。
-4. 依需求使用「快速檢查」、「官方完整檢查」或「互追中心」。
+1. 到 **Releases** 下載最新的 Windows ZIP 壓縮檔。
+2. 解壓縮 ZIP。
+3. 執行其中的 `CC69_Threads_Manager.exe`。
+4. 第一次開啟後，到「快速檢查」完成 Threads 登入。
+5. 若 Threads 顯示「儲存登入資訊」，請完成該步驟；CC69 會等待登入流程真正完成後再繼續。
+6. 依需求使用「快速檢查」、「官方完整檢查」或「互追中心」。
 
 ## 下載檔案
 
-- `CC69_Threads_Manager.exe`：Windows 執行檔
-- `CC69_Threads_Manager.exe.sha256`：SHA-256 完整性核對檔
+每個版本的 Release 主要提供：
+
+- `CC69_Threads_Manager_vX.X.X_Windows.zip`：Windows 完整下載包，內含 EXE、EXE 的 SHA-256 核對檔與簡短使用說明。
+- `CC69_Threads_Manager_vX.X.X_Windows.zip.sha256`：ZIP 本身的 SHA-256 完整性核對檔。
+
+一般使用者只需要下載 ZIP 即可。
 
 ## 使用提醒
 
