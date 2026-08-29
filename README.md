@@ -23,9 +23,9 @@
 
 ## 🖥️ 真實程式介面
 
-<p align="center"><img src="assets/cc69-ui-zh.png" alt="CC69 Threads Manager 真實繁體中文介面" width="100%"></p>
+<p align="center"><img src="assets/cc69-ui-zh-real.webp" alt="CC69 Threads Manager 真實程式介面" width="100%"></p>
 
-> 上圖由 CC69 本身實際啟動後截取，並由 GitHub Actions 隨介面更新。不是重新繪製的示意圖。
+> 這是 CC69 的真實程式介面。
 
 ---
 
