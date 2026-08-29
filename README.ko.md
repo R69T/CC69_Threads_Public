@@ -5,11 +5,11 @@
 
 <p align="center"><a href="https://github.com/R69T/CC69_Threads_Public/releases/latest"><strong>⬇️ 최신 버전 다운로드</strong></a></p>
 
-## 🖥️ 실제 프로그램 화면
+## ✨ CC69 기능 소개
 
-<p align="center"><img src="assets/cc69-ui-ko.png" alt="CC69 Threads Manager 실제 한국어 화면" width="100%"></p>
+<p align="center"><img src="assets/cc69-promo-ko.webp" alt="CC69 Threads Manager 기능 소개" width="100%"></p>
 
-> 이 이미지는 GitHub Actions가 실제 CC69 앱을 실행해 캡처하는 화면입니다. 다시 그린 목업이 아닙니다.
+> **맞팔하기로 했는데 팔로잉 수와 팔로워 수 차이가 너무 큰가요?** CC69가 Threads 팔로우 관계를 빠르게 비교해 맞팔하지 않은 계정을 찾고 더 쉽게 정리할 수 있게 도와줍니다.
 
 ## 🎯 CC69가 하는 일
 
@@ -23,11 +23,11 @@
 - 📦 빠른 검사가 불완전하면 Meta / Threads 공식 다운로드 데이터 가져오기
 - 🌐 繁體中文 / English / 日本語 / 한국어
 
-### 🙂 베타의 작은 숨은 기능
+### 🙂 무료 작은 보너스
 
-**맞팔 센터｜Beta**
+**맞팔 센터｜무료 작은 보너스**
 
-참여자가 많아질수록 더 재미있어질 수 있습니다. 자세한 기능은 직접 발견해 보세요 🙂
+모두를 위한 무료 작은 기능입니다. 궁금하시면 직접 둘러보세요. 즐거운 맞팔 되세요 🙂
 
 ## 🚀 빠른 시작
 
