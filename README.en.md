@@ -1,94 +1,95 @@
 <p align="center"><a href="README.md">繁體中文</a> ｜ <strong>English</strong> ｜ <a href="README.ja.md">日本語</a> ｜ <a href="README.ko.md">한국어</a></p>
 
-# CC69 Threads Manager
+<h2 align="center">CC69 Threads Manager</h2>
+<p align="center">A clearer Windows desktop workflow for Threads relationships.</p>
 
-**A Windows desktop tool for reviewing and organizing your Threads relationships.**
+<p align="center"><a href="https://github.com/R69T/CC69_Threads_Public/releases/latest"><strong>⬇️ Download Latest</strong></a> · <a href="#-quick-start"><strong>🚀 Quick Start</strong></a> · <a href="#-windows-smartscreen"><strong>🛡️ SmartScreen</strong></a></p>
 
-[⬇️ Download the latest version](https://github.com/R69T/CC69_Threads_Public/releases/latest) · [All releases](https://github.com/R69T/CC69_Threads_Public/releases)
+<p align="center"><img src="assets/quick-start-en.svg" alt="CC69 English quick start" width="100%"></p>
 
-## What it does
+## 🚀 Quick Start
 
-- Quick scan of Followers / Following
-- Find accounts you follow that do not follow you back
-- Find followers you have not followed back
-- Show mutual-follow status
-- Sequential unfollow with visible progress
-- New-follow protection
-- Import official Meta / Threads downloaded data for a more complete comparison
-- Mutual Follow Center (Beta)
-- Local relationship data storage
+| Step | What to do | What happens |
+| --- | --- | --- |
+| **1. Launch CC69** | Extract the ZIP and run `CC69_Threads_Manager.exe` | First launch prepares local browser/app data. |
+| **2. Confirm Threads login** | Press the blue login button | Complete login on the official Threads / Meta page. |
+| **3. Start Quick Scan** | After login, the green scan button becomes the next primary action | Progress shows Followers / Following counts as they are retrieved. |
+| **4. Review results** | Use the five summary cards and the table below | Following, Followers, non-followers, accounts you have not followed back, Mutual. |
+| **5. Manage accounts** | Select confirmed rows and unfollow if needed | CC69 processes accounts sequentially and shows progress. |
+
+**The first-use rule is simple: sign in first, then scan.**
+
+## ✨ Main Features
+
+- 🔎 Quick Scan of Threads Followers / Following
+- 🟠 Find accounts that do not follow you back
+- 🔴 Find followers you have not followed back
+- 🟢 Mutual-follow status
+- ✅ Sequential unfollow with visible progress
+- 🕒 New-follow protection
+- 📦 Import official Meta / Threads downloaded data for a more complete comparison
+- 🤝 Mutual Follow Center Beta
+- 🌐 Traditional Chinese / English / Japanese / Korean
 
 Quick Scan is limited to **6 runs per rolling 24 hours**.
 
-## Languages
+## 🌐 Languages
 
-Built in: **繁體中文 / English / 日本語 / 한국어**.
+On first launch, CC69 chooses the UI language from Windows automatically:
 
-On the first launch, CC69 automatically chooses the UI language from your Windows system language. You can change the language at the top of the app at any time, and CC69 remembers your choice.
+- Chinese Windows → Traditional Chinese
+- Japanese Windows → Japanese
+- Korean Windows → Korean
+- Other languages → English
 
-## Download and install
+You can change it at the top of the app at any time.
 
-Download the latest:
+## ⬇️ Download & Install
+
+Go to **https://github.com/R69T/CC69_Threads_Public/releases/latest** and download:
 
 `CC69_Threads_Manager_vX.X.X_Windows.zip`
 
-Then:
+Extract it, then run `CC69_Threads_Manager.exe`.
 
-1. Extract the ZIP.
-2. Run `CC69_Threads_Manager.exe`.
-3. On first launch, CC69 prepares its local data.
-4. Open Quick Scan and confirm your Threads login.
+## 🛡️ Windows SmartScreen
 
-The ZIP contains the EXE, an EXE SHA-256 file, and a short README. The Release page also provides a SHA-256 file for the ZIP.
+CC69 is **not currently signed with a commercial Windows code-signing certificate**, so SmartScreen may show “Windows protected your PC” or “Unknown publisher.”
 
-## Windows SmartScreen / “Unknown publisher”
+**That warning by itself does not mean Windows detected a virus.** It means Windows cannot currently verify a publisher signature/reputation for the EXE.
 
-CC69 is **not currently signed with a commercial Windows code-signing certificate**. Because of that, Microsoft Defender SmartScreen may show messages such as:
+Only download from the official Releases page:
 
-- “Windows protected your PC”
-- “Unknown publisher”
-- A confirmation before running the app
+**https://github.com/R69T/CC69_Threads_Public/releases**
 
-**This warning by itself does not mean Windows detected a virus.** It mainly means the EXE does not currently have a publisher signature/reputation that Windows can verify.
-
-However, never run an EXE from an unknown source just because this page says so. Only download CC69 from the official Releases page:
-
-https://github.com/R69T/CC69_Threads_Public/releases
-
-You can also verify the EXE SHA-256 in PowerShell:
+Verify the EXE hash in PowerShell if desired:
 
 ```powershell
 Get-FileHash .\CC69_Threads_Manager.exe -Algorithm SHA256
 ```
 
-Compare it with `CC69_Threads_Manager.exe.sha256` included in the ZIP.
+Compare it with `CC69_Threads_Manager.exe.sha256` inside the ZIP.
 
-If the file is from the official Release page and the hash matches, you can review the SmartScreen prompt and choose to run it.
+## 🔐 Login & Privacy
 
-## Login privacy
+Your Threads / Meta password is entered on the **official Threads / Meta login page**, not into the CC69 interface.
 
-Login is completed on the official Threads / Meta page. CC69 does not ask you to type your Threads / Meta password into the CC69 interface.
+If Threads asks to save login information after the first login, CC69 attempts to complete that step so the browser session can be reused later.
 
-If Threads shows a “Save your login info?” step after login, CC69 attempts to complete that step so the browser login state can be reused later.
+## 🔎 If Quick Scan is incomplete
 
-## Quick Scan vs complete data import
+Threads Web uses dynamic loading and virtualized lists. CC69 shows:
 
-### Quick Scan
+`retrieved count / count displayed by Threads`
 
-Best for everyday use. It reads relationship data available through Threads Web and shows the number retrieved versus the count displayed by Threads.
+If Quick Scan remains incomplete, switch to **Full Check by Data Download** and import your official Meta / Threads downloaded relationship data.
 
-Threads uses dynamic loading and virtualized lists, so some accounts may still return incomplete results. CC69 avoids treating missing/unretrieved accounts as confirmed results.
+## 🤝 Mutual Follow Center Beta
 
-### Full Check by Data Download
+Participation is voluntary. CC69 can match participating accounts and keep minimal pairing state. This feature is still in beta.
 
-For the most complete Followers / Following comparison, download your official Threads data from Meta and import it into CC69. This is the recommended fallback when Quick Scan is incomplete.
+## ⚠️ Usage Notice
 
-## Mutual Follow Center Beta
+Threads can change its web structure and platform limits at any time. If Threads shows a challenge, restriction, or “try again later” message, stop and retry later.
 
-Participation is voluntary. CC69 can assign previously unmatched participating accounts and process them sequentially. Accounts that are already mutual can be treated as completed instead of as a follow failure.
-
-## Safety notes
-
-Threads page structure and platform limits can change. If Threads displays verification, temporary limits, “try again later,” or another restriction message, stop and try again later.
-
-CC69 does not claim that any action frequency is guaranteed to avoid platform restrictions.
+CC69 does not guarantee that any particular action frequency will avoid platform restrictions.
