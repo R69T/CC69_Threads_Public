@@ -5,11 +5,11 @@
 
 <p align="center"><a href="https://github.com/R69T/CC69_Threads_Public/releases/latest"><strong>⬇️ 最新版をダウンロード</strong></a></p>
 
-## 🖥️ 実際のアプリ画面
+## ✨ CC69 の機能紹介
 
-<p align="center"><img src="assets/cc69-ui-ja.png" alt="CC69 Threads Manager 実際の日本語画面" width="100%"></p>
+<p align="center"><img src="assets/cc69-promo-ja.webp" alt="CC69 Threads Manager 機能紹介" width="100%"></p>
 
-> この画像は GitHub Actions が実際の CC69 アプリを起動して取得するスクリーンショットです。描き直したモックアップではありません。
+> **相互フォローのはずなのに、フォロー数とフォロワー数の差が大きい？** CC69 が Threads のフォロー関係をすばやく比較し、フォローバックされていないアカウントを見つけて、整理・解除をラクにします。
 
 ## 🎯 CC69 でできること
 
@@ -23,11 +23,11 @@
 - 📦 クイックスキャンが不完全な場合は Meta / Threads 公式ダウンロードデータを読み込み
 - 🌐 繁體中文 / English / 日本語 / 한국어
 
-### 🙂 ベータ版の小さな仕掛け
+### 🙂 無料のおまけ
 
-**相互フォローセンター｜Beta**
+**相互フォローセンター｜無料のおまけ**
 
-参加者が増えるほど、ちょっと面白くなるかもしれません。詳しくは自分で探してみてください 🙂
+みんな向けの無料の小機能です。気になる方は自分で見てみてください。楽しい相互フォローを 🙂
 
 ## 🚀 クイックスタート
 
