@@ -3,7 +3,13 @@
 <h2 align="center">CC69 Threads Manager</h2>
 <p align="center"><strong>Clean up your Threads relationships and see who actually follows back.</strong></p>
 
-<p align="center"><a href="https://github.com/R69T/CC69_Threads_Public/releases/latest"><strong>⬇️ Download Latest</strong></a></p>
+<p align="center">
+  <a href="https://github.com/R69T/CC69_Threads_Public/releases/latest"><strong>⬇️ Download Latest</strong></a>
+  &nbsp; · &nbsp;
+  <a href="#-quick-start"><strong>🚀 Quick Start</strong></a>
+  &nbsp; · &nbsp;
+  <a href="#%EF%B8%8F-windows-smartscreen"><strong>🛡️ Windows Safety</strong></a>
+</p>
 
 ## ✨ CC69 at a glance
 
@@ -41,13 +47,27 @@ Go to **https://github.com/R69T/CC69_Threads_Public/releases/latest**, download 
 
 ## 🛡️ Windows SmartScreen
 
-CC69 is not currently signed with a commercial Windows code-signing certificate, so SmartScreen may show “Windows protected your PC” or “Unknown publisher.”
+<p align="center"><img src="assets/windows-smartscreen-en.svg" alt="Windows SmartScreen instructions" width="100%"></p>
 
-**That warning by itself does not mean Windows detected a virus.** Only download from the official GitHub Releases page and verify SHA-256 if desired.
+CC69 is currently **not signed with a commercial Windows Code Signing certificate**. Because of that, Windows may show **“Windows protected your PC”** or **“Unknown publisher”** the first time you run it.
+
+> **This SmartScreen screen is not, by itself, a malware detection result.** It means Windows cannot currently verify CC69's publisher through a trusted digital signature / established publisher reputation.
+
+If you downloaded CC69 from this project's official GitHub Releases page:
+
+1. Click **More info**.
+2. Confirm the app is `CC69_Threads_Manager.exe`.
+3. Click **Run anyway**.
+
+Only download CC69 from the official Releases page. You can also verify the executable with SHA-256:
 
 ```powershell
 Get-FileHash .\CC69_Threads_Manager.exe -Algorithm SHA256
 ```
+
+Compare the result with `CC69_Threads_Manager.exe.sha256` included with the release package.
+
+> If Windows Defender or another antivirus separately reports a specific malware detection, treat that as a different warning and investigate it rather than ignoring it.
 
 ## 🔐 Login & Privacy
 
