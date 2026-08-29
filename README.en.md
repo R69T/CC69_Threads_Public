@@ -5,11 +5,11 @@
 
 <p align="center"><a href="https://github.com/R69T/CC69_Threads_Public/releases/latest"><strong>⬇️ Download Latest</strong></a></p>
 
-## 🖥️ Real App Interface
+## ✨ CC69 at a glance
 
-<p align="center"><img src="assets/cc69-ui-zh-real.webp" alt="CC69 Threads Manager real app interface" width="100%"></p>
+<p align="center"><img src="assets/cc69-promo-en.webp" alt="CC69 Threads Manager overview" width="100%"></p>
 
-> This is the real CC69 app interface.
+> **Agreed to follow each other, but your Following and Followers are far apart?** CC69 quickly compares Threads relationships, finds accounts that did not follow back, and makes cleanup easier.
 
 ## 🎯 What CC69 does
 
@@ -23,11 +23,11 @@ If you have ever agreed to mutual follows but ended up with Following much highe
 - 📦 Import official Meta / Threads downloaded data when Quick Scan is incomplete
 - 🌐 Traditional Chinese / English / Japanese / Korean
 
-### 🙂 A small beta surprise
+### 🙂 A free little bonus
 
-**Mutual Center｜Beta**
+**Mutual Center｜Free Bonus**
 
-The more people participate, the more interesting it becomes. Explore it yourself 🙂
+A free little extra for everyone. If you are curious, go check it out yourself. Happy mutual follows 🙂
 
 ## 🚀 Quick Start
 
