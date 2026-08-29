@@ -10,7 +10,7 @@
   &nbsp; · &nbsp;
   <a href="#-快速開始"><strong>🚀 快速開始</strong></a>
   &nbsp; · &nbsp;
-  <a href="#-windows-smartscreen"><strong>🛡️ Windows 安全提示</strong></a>
+  <a href="#%EF%B8%8F-windows-smartscreen"><strong>🛡️ Windows 安全提示</strong></a>
 </p>
 
 <p align="center">
@@ -97,17 +97,27 @@ Release 會附 SHA-256 核對檔。
 
 ## 🛡️ Windows SmartScreen
 
-CC69 目前尚未使用商業 Windows Code Signing 憑證簽署 EXE，所以 Windows 可能顯示「Windows 已保護您的電腦」或「未知的發行者」。
+<p align="center"><img src="assets/windows-smartscreen-zh.svg" alt="Windows SmartScreen 操作說明" width="100%"></p>
 
-**這個提示本身不代表 Windows 已偵測到病毒。** 它代表 Windows 目前無法驗證這個 EXE 的發行者數位簽章／聲譽。
+CC69 目前**尚未使用商業 Windows Code Signing 憑證簽署 EXE**。因此第一次執行時，Windows 可能顯示「Windows 已保護您的電腦」或「未知的發行者」。
 
-請只從本 GitHub 官方 Releases 下載。
+> **這個 SmartScreen 畫面本身不是 Windows 的病毒偵測結果。** 它代表 Windows 目前無法透過受信任的數位簽章／既有發行者聲譽確認 CC69 的發行者身分。
+
+如果你是從本專案官方 GitHub Releases 下載：
+
+1. 點 **「其他資訊」**。
+2. 確認應用程式名稱是 `CC69_Threads_Manager.exe`。
+3. 點 **「仍要執行」**。
+
+請只從本專案官方 Releases 下載。也可以使用 SHA-256 核對執行檔：
 
 ```powershell
 Get-FileHash .\CC69_Threads_Manager.exe -Algorithm SHA256
 ```
 
-可與 ZIP 內的 `CC69_Threads_Manager.exe.sha256` 比對。
+與 Release ZIP 內的 `CC69_Threads_Manager.exe.sha256` 比對。
+
+> 如果 Windows Defender 或其他防毒軟體另外顯示了具體的惡意程式偵測，那屬於另一種警告，請不要直接忽略，應另外確認。
 
 ---
 
