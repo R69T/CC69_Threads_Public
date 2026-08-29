@@ -3,7 +3,13 @@
 <h2 align="center">CC69 Threads Manager</h2>
 <p align="center"><strong>Threads のフォロー関係を見やすく整理。</strong></p>
 
-<p align="center"><a href="https://github.com/R69T/CC69_Threads_Public/releases/latest"><strong>⬇️ 最新版をダウンロード</strong></a></p>
+<p align="center">
+  <a href="https://github.com/R69T/CC69_Threads_Public/releases/latest"><strong>⬇️ 最新版をダウンロード</strong></a>
+  &nbsp; · &nbsp;
+  <a href="#-クイックスタート"><strong>🚀 クイックスタート</strong></a>
+  &nbsp; · &nbsp;
+  <a href="#%EF%B8%8F-windows-smartscreen"><strong>🛡️ Windows 安全案内</strong></a>
+</p>
 
 ## ✨ CC69 の機能紹介
 
@@ -41,13 +47,27 @@
 
 ## 🛡️ Windows SmartScreen
 
-CC69 は現在、商用 Windows コード署名証明書で署名されていないため、「Windows によって PC が保護されました」「不明な発行元」などが表示される場合があります。
+<p align="center"><img src="assets/windows-smartscreen-ja.svg" alt="Windows SmartScreen の操作案内" width="100%"></p>
 
-**この警告だけでウイルスが検出されたという意味ではありません。** 必ず公式 GitHub Releases からダウンロードしてください。
+CC69 は現在、**商用 Windows コード署名証明書で署名されていません**。そのため初回実行時に「Windows によって PC が保護されました」や「不明な発行元」と表示される場合があります。
+
+> **この SmartScreen 画面そのものは、Windows がウイルスを検出したという意味ではありません。** Windows が信頼済みのデジタル署名／発行元の評判情報から CC69 の発行元を確認できない、という意味です。
+
+本プロジェクトの公式 GitHub Releases からダウンロードした場合：
+
+1. **「詳細情報」**をクリックします。
+2. アプリ名が `CC69_Threads_Manager.exe` であることを確認します。
+3. **「実行」**をクリックします。
+
+必ず公式 Releases からダウンロードしてください。必要に応じて SHA-256 も確認できます。
 
 ```powershell
 Get-FileHash .\CC69_Threads_Manager.exe -Algorithm SHA256
 ```
+
+Release パッケージ内の `CC69_Threads_Manager.exe.sha256` と比較してください。
+
+> Windows Defender や別のウイルス対策ソフトが、SmartScreen とは別に具体的なマルウェア検出を表示した場合は別の警告です。無視せず確認してください。
 
 ## 🔐 ログインとプライバシー
 
