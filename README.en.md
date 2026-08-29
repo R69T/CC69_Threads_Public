@@ -7,9 +7,9 @@
 
 ## 🖥️ Real App Interface
 
-<p align="center"><img src="assets/cc69-ui-en.png" alt="CC69 Threads Manager real English interface" width="100%"></p>
+<p align="center"><img src="assets/cc69-ui-zh-real.webp" alt="CC69 Threads Manager real app interface" width="100%"></p>
 
-> This screenshot is captured from the actual CC69 app by GitHub Actions. It is not a redrawn mockup.
+> This is the real CC69 app interface.
 
 ## 🎯 What CC69 does
 
