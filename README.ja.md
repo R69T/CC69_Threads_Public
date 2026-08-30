@@ -8,12 +8,12 @@
   &nbsp; · &nbsp;
   <a href="#-クイックスタート"><strong>🚀 クイックスタート</strong></a>
   &nbsp; · &nbsp;
-  <a href="#%EF%B8%8F-windows-smartscreen"><strong>🛡️ Windows 安全案内</strong></a>
+  <a href="#windows-smartscreen"><strong>🛡️ Windows 安全案内</strong></a>
 </p>
 
 ## ✨ CC69 の機能紹介
 
-<p align="center"><img src="assets/cc69-promo-ja.webp" alt="CC69 Threads Manager 機能紹介" width="100%"></p>
+<p align="center"><img src="assets/JP%20PROM.png" alt="CC69 Threads Manager 機能紹介" width="100%"></p>
 
 > **相互フォローのはずなのに、フォロー数とフォロワー数の差が大きい？** CC69 が Threads のフォロー関係をすばやく比較し、フォローバックされていないアカウントを見つけて、整理・解除をラクにします。
 
@@ -45,21 +45,20 @@
 
 **https://github.com/R69T/CC69_Threads_Public/releases/latest** から `CC69_Threads_Manager_vX.X.X_Windows.zip` をダウンロードし、展開後 `CC69_Threads_Manager.exe` を実行してください。
 
+<a id="windows-smartscreen"></a>
 ## 🛡️ Windows SmartScreen
 
-<p align="center"><img src="assets/windows-smartscreen-ja.svg" alt="Windows SmartScreen の操作案内" width="100%"></p>
+<p align="center"><img src="assets/windows-smartscreen-real.png" alt="Windows によって PC が保護されました - CC69 Threads Manager" width="540"></p>
 
-CC69 は現在、**商用 Windows コード署名証明書で署名されていません**。そのため初回実行時に「Windows によって PC が保護されました」や「不明な発行元」と表示される場合があります。
+上の画像は、CC69 を初めて起動したときに表示される場合がある**実際の Microsoft Defender SmartScreen 画面**です。アプリ名 `CC69_Threads_Manager.exe` と「不明な発行元」に相当する表示が出る場合があります。
 
-> **この SmartScreen 画面そのものは、Windows がウイルスを検出したという意味ではありません。** Windows が信頼済みのデジタル署名／発行元の評判情報から CC69 の発行元を確認できない、という意味です。
+CC69 は現在、**商用 Windows コード署名証明書を使用していません**。そのため Windows は、信頼済みのデジタル署名で発行元を確認できません。
 
-本プロジェクトの公式 GitHub Releases からダウンロードした場合：
+> **この SmartScreen 画面だけで、Windows が CC69 をウイルスとして検出したという意味ではありません。** 主に「Windows が確認できる商用コード署名／既存の発行元評価がない」という警告です。
 
-1. **「詳細情報」**をクリックします。
-2. アプリ名が `CC69_Threads_Manager.exe` であることを確認します。
-3. **「実行」**をクリックします。
+本プロジェクトの**公式 GitHub Releases**からダウンロードした場合は、アプリ名が `CC69_Threads_Manager.exe` であることを確認し、Windows の案内を見て実行するか判断してください。
 
-必ず公式 Releases からダウンロードしてください。必要に応じて SHA-256 も確認できます。
+必要に応じて SHA-256 も確認できます。
 
 ```powershell
 Get-FileHash .\CC69_Threads_Manager.exe -Algorithm SHA256
@@ -67,7 +66,7 @@ Get-FileHash .\CC69_Threads_Manager.exe -Algorithm SHA256
 
 Release パッケージ内の `CC69_Threads_Manager.exe.sha256` と比較してください。
 
-> Windows Defender や別のウイルス対策ソフトが、SmartScreen とは別に具体的なマルウェア検出を表示した場合は別の警告です。無視せず確認してください。
+> Windows Defender や別のウイルス対策ソフトが、SmartScreen とは別に**具体的なマルウェア名や検出結果**を表示した場合は別の警告です。無視せず、別途確認してください。
 
 ## 🔐 ログインとプライバシー
 
