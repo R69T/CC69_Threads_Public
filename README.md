@@ -96,27 +96,55 @@ Release 會附 SHA-256 核對檔。
 ---
 
 <a id="windows-smartscreen"></a>
-## 🛡️ Windows 安全提示
+## 🛡️ Windows 安全提示｜第一次執行請先看
 
 <p align="center"><img src="assets/windows-smartscreen-real.png" alt="Windows 已保護您的電腦 - CC69 Threads Manager" width="540"></p>
 
-第一次執行 CC69 時，Windows 可能會出現上圖這個**真實的 Microsoft Defender SmartScreen 畫面**，顯示「Windows 已保護您的電腦」、應用程式 `CC69_Threads_Manager.exe`，以及「未知的發行者」。
+上圖就是 CC69 第一次執行時**實際可能出現的 Microsoft Defender SmartScreen 畫面**。你可能會看到：
 
-CC69 目前**沒有購買／使用商業 Windows Code Signing 程式碼簽章憑證**，因此 Windows 無法用受信任的數位簽章確認發行者身分。
+- **Windows 已保護您的電腦**
+- 應用程式：`CC69_Threads_Manager.exe`
+- 發行者：**不明的發行者 / Unknown publisher**
 
-> **這個 SmartScreen 畫面本身不代表 CC69 被 Windows 判定為病毒。** 它主要是在提醒：這個 EXE 沒有 Windows 可驗證的商業程式碼簽章／既有發行者聲譽。
+### 為什麼會出現？
 
-如果你是從本專案的**官方 GitHub Releases** 下載，可先確認應用程式名稱為 `CC69_Threads_Manager.exe`，再依 Windows 畫面選擇是否繼續執行。
+CC69 目前**尚未購買或使用商業 Windows Code Signing 程式碼簽章憑證**。因此 Windows 無法使用受信任的數位簽章確認發行者身分，也可能因為程式尚未累積足夠的 SmartScreen 聲譽而跳出這個提示。
 
-也可以使用 SHA-256 核對執行檔：
+> **重要：這個 SmartScreen「未知發行者」畫面本身，不代表 Windows 已經偵測到 CC69 是病毒。**
+>
+> 它主要表示：Windows 目前無法透過商業程式碼簽章／既有發行者聲譽驗證這個 EXE 的發行者。
+
+### 如果你是從本專案官方 GitHub Releases 下載
+
+請先確認你下載的位置是本專案的官方 Releases，並確認畫面中的應用程式名稱為：
+
+`CC69_Threads_Manager.exe`
+
+Windows 有時會先顯示只有「不要執行」的第一層 SmartScreen 畫面；此時可按：
+
+1. **「其他資訊」**
+2. 確認應用程式名稱為 `CC69_Threads_Manager.exe`
+3. 畫面出現上圖的 **「仍要執行」** 後，再依你的判斷選擇是否執行
+
+### 想再確認一次檔案？可以檢查 SHA-256
+
+在 PowerShell 執行：
 
 ```powershell
 Get-FileHash .\CC69_Threads_Manager.exe -Algorithm SHA256
 ```
 
-與 Release ZIP 內的 `CC69_Threads_Manager.exe.sha256` 比對。
+再與 Release ZIP 內附的：
 
-> 如果 Windows Defender 或其他防毒軟體另外顯示了**具體的惡意程式名稱或偵測結果**，那和 SmartScreen 的「未知發行者」提示不同，請另外確認，不要直接忽略。
+`CC69_Threads_Manager.exe.sha256`
+
+進行比對。兩者一致代表你目前的 EXE 與該 Release 提供的檔案一致。
+
+### SmartScreen 與真正的防毒偵測不同
+
+如果 Windows Defender 或其他防毒軟體另外顯示了**具體的惡意程式名稱、Trojan、Malware、PUA 等實際偵測結果**，那就不是單純的「未知發行者」SmartScreen 提示，請不要直接忽略，應另外確認來源與檔案。
+
+**建議只從本專案官方 GitHub Releases 下載 CC69。**
 
 ---
 
