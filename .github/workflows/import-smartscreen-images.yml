@@ -1,4 +1,4 @@
-name: Import localized SmartScreen screenshots
+name: Connect localized SmartScreen screenshots
 
 on:
   push:
@@ -9,52 +9,24 @@ permissions:
   contents: write
 
 jobs:
-  import-images:
+  connect-images:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Download real localized SmartScreen screenshots
+      - name: Connect each language page to its real screenshot
         shell: bash
         run: |
           set -euo pipefail
+          sed -i 's#assets/windows-smartscreen-real.png#assets/windows-smartscreen-zh.png#g' README.md
+          sed -i 's#assets/windows-smartscreen-real.png#assets/windows-smartscreen-en.png#g' README.en.md
+          sed -i 's#assets/windows-smartscreen-real.png#assets/windows-smartscreen-ja.png#g' README.ja.md
+          sed -i 's#assets/windows-smartscreen-real.png#assets/windows-smartscreen-ko.png#g' README.ko.md
 
-          # Traditional Chinese: real CC69 screenshot supplied by the project owner.
-          cp assets/windows-smartscreen-real.png assets/windows-smartscreen-zh.png
-
-          # English: ASUS official support screenshot (expanded SmartScreen / Run anyway).
-          curl -fL --retry 3 \
-            'https://km-ap.asus.com/uploads/PhotoLibrarys/8a53fc79-6a00-4a96-8408-a7e886967aef/20240712112504848_EN_3.png' \
-            -o assets/windows-smartscreen-en.png
-
-          # Japanese: Sanwa Supply official support screenshot (expanded SmartScreen / Run).
-          curl -fL --retry 3 \
-            'https://www.sanwa.co.jp/static/images/seihin_joho/windows11_protection/img_1-2.png' \
-            -o assets/windows-smartscreen-ja.png
-
-          # Korean: IMAS official download guide screenshot (expanded SmartScreen / Run).
-          curl -fL --retry 3 \
-            'https://imas.kr/images/smartscreen-2.png' \
-            -o assets/windows-smartscreen-ko.png
-
-          test -s assets/windows-smartscreen-zh.png
-          test -s assets/windows-smartscreen-en.png
-          test -s assets/windows-smartscreen-ja.png
-          test -s assets/windows-smartscreen-ko.png
-
-          file assets/windows-smartscreen-*.png
-
-      - name: Commit imported screenshots
-        shell: bash
-        run: |
-          set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add assets/windows-smartscreen-zh.png assets/windows-smartscreen-en.png assets/windows-smartscreen-ja.png assets/windows-smartscreen-ko.png
-          if git diff --cached --quiet; then
-            echo 'No image changes to commit.'
-            exit 0
-          fi
-          git commit -m 'Add real localized Windows SmartScreen screenshots [skip ci]'
+          git add README.md README.en.md README.ja.md README.ko.md
+          git rm .github/workflows/import-smartscreen-images.yml
+          git commit -m 'Use real localized SmartScreen screenshots in all READMEs [skip ci]'
           git push
