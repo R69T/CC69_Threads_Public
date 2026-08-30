@@ -8,12 +8,12 @@
   &nbsp; · &nbsp;
   <a href="#-quick-start"><strong>🚀 Quick Start</strong></a>
   &nbsp; · &nbsp;
-  <a href="#%EF%B8%8F-windows-smartscreen"><strong>🛡️ Windows Safety</strong></a>
+  <a href="#windows-smartscreen"><strong>🛡️ Windows Safety</strong></a>
 </p>
 
 ## ✨ CC69 at a glance
 
-<p align="center"><img src="assets/cc69-promo-en.webp" alt="CC69 Threads Manager overview" width="100%"></p>
+<p align="center"><img src="assets/EN%20PROM.png" alt="CC69 Threads Manager overview" width="100%"></p>
 
 > **Agreed to follow each other, but your Following and Followers are far apart?** CC69 quickly compares Threads relationships, finds accounts that did not follow back, and makes cleanup easier.
 
@@ -45,21 +45,20 @@ Quick Scan is limited to **6 runs per rolling 24 hours**.
 
 Go to **https://github.com/R69T/CC69_Threads_Public/releases/latest**, download `CC69_Threads_Manager_vX.X.X_Windows.zip`, extract it, then run `CC69_Threads_Manager.exe`.
 
+<a id="windows-smartscreen"></a>
 ## 🛡️ Windows SmartScreen
 
-<p align="center"><img src="assets/windows-smartscreen-en.svg" alt="Windows SmartScreen instructions" width="100%"></p>
+<p align="center"><img src="assets/windows-smartscreen-real.png" alt="Windows protected your PC - CC69 Threads Manager" width="540"></p>
 
-CC69 is currently **not signed with a commercial Windows Code Signing certificate**. Because of that, Windows may show **“Windows protected your PC”** or **“Unknown publisher”** the first time you run it.
+The screenshot above is the **real Microsoft Defender SmartScreen screen** that may appear when CC69 is launched for the first time. It may show the app as `CC69_Threads_Manager.exe` with an **unknown publisher**.
 
-> **This SmartScreen screen is not, by itself, a malware detection result.** It means Windows cannot currently verify CC69's publisher through a trusted digital signature / established publisher reputation.
+CC69 is currently **not signed with a commercial Windows Code Signing certificate**, so Windows cannot verify the publisher through a trusted digital signature.
 
-If you downloaded CC69 from this project's official GitHub Releases page:
+> **This SmartScreen screen by itself does not mean Windows detected CC69 as a virus.** It mainly means the executable does not currently have a Windows-verifiable commercial code-signing certificate / established publisher reputation.
 
-1. Click **More info**.
-2. Confirm the app is `CC69_Threads_Manager.exe`.
-3. Click **Run anyway**.
+If you downloaded CC69 from this project's **official GitHub Releases** page, confirm that the application is `CC69_Threads_Manager.exe` and then decide whether to continue from the Windows prompt.
 
-Only download CC69 from the official Releases page. You can also verify the executable with SHA-256:
+You can also verify the executable with SHA-256:
 
 ```powershell
 Get-FileHash .\CC69_Threads_Manager.exe -Algorithm SHA256
@@ -67,7 +66,7 @@ Get-FileHash .\CC69_Threads_Manager.exe -Algorithm SHA256
 
 Compare the result with `CC69_Threads_Manager.exe.sha256` included with the release package.
 
-> If Windows Defender or another antivirus separately reports a specific malware detection, treat that as a different warning and investigate it rather than ignoring it.
+> If Windows Defender or another antivirus separately reports a **specific malware name or detection**, that is different from the SmartScreen “unknown publisher” warning and should be investigated separately.
 
 ## 🔐 Login & Privacy
 
