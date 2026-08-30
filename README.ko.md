@@ -8,12 +8,12 @@
   &nbsp; · &nbsp;
   <a href="#-빠른-시작"><strong>🚀 빠른 시작</strong></a>
   &nbsp; · &nbsp;
-  <a href="#%EF%B8%8F-windows-smartscreen"><strong>🛡️ Windows 안전 안내</strong></a>
+  <a href="#windows-smartscreen"><strong>🛡️ Windows 안전 안내</strong></a>
 </p>
 
 ## ✨ CC69 기능 소개
 
-<p align="center"><img src="assets/cc69-promo-ko.webp" alt="CC69 Threads Manager 기능 소개" width="100%"></p>
+<p align="center"><img src="assets/KR%20PROM.png" alt="CC69 Threads Manager 기능 소개" width="100%"></p>
 
 > **맞팔하기로 했는데 팔로잉 수와 팔로워 수 차이가 너무 큰가요?** CC69가 Threads 팔로우 관계를 빠르게 비교해 맞팔하지 않은 계정을 찾고 더 쉽게 정리할 수 있게 도와줍니다.
 
@@ -45,21 +45,20 @@
 
 **https://github.com/R69T/CC69_Threads_Public/releases/latest** 에서 `CC69_Threads_Manager_vX.X.X_Windows.zip`을 다운로드하고 압축을 푼 뒤 `CC69_Threads_Manager.exe`를 실행하세요.
 
+<a id="windows-smartscreen"></a>
 ## 🛡️ Windows SmartScreen
 
-<p align="center"><img src="assets/windows-smartscreen-ko.svg" alt="Windows SmartScreen 실행 안내" width="100%"></p>
+<p align="center"><img src="assets/windows-smartscreen-real.png" alt="Windows의 PC 보호 - CC69 Threads Manager" width="540"></p>
 
-CC69는 현재 **상용 Windows 코드 서명 인증서로 서명되지 않았습니다**. 따라서 처음 실행할 때 “Windows의 PC 보호” 또는 “알 수 없는 게시자” 메시지가 표시될 수 있습니다.
+위 이미지는 CC69를 처음 실행할 때 표시될 수 있는 **실제 Microsoft Defender SmartScreen 화면**입니다. `CC69_Threads_Manager.exe`와 함께 게시자를 확인할 수 없다는 의미의 안내가 표시될 수 있습니다.
 
-> **이 SmartScreen 화면 자체는 Windows가 바이러스를 탐지했다는 뜻이 아닙니다.** Windows가 신뢰할 수 있는 디지털 서명 / 기존 게시자 평판으로 CC69의 게시자를 확인할 수 없다는 뜻입니다.
+CC69는 현재 **상용 Windows 코드 서명 인증서를 사용하지 않습니다**. 따라서 Windows가 신뢰할 수 있는 디지털 서명으로 게시자를 확인할 수 없습니다.
 
-이 프로젝트의 공식 GitHub Releases에서 다운로드했다면:
+> **이 SmartScreen 화면 자체가 Windows에서 CC69를 바이러스로 탐지했다는 뜻은 아닙니다.** 주로 Windows에서 확인 가능한 상용 코드 서명 / 기존 게시자 평판이 없다는 안내입니다.
 
-1. **추가 정보**를 클릭합니다.
-2. 앱 이름이 `CC69_Threads_Manager.exe`인지 확인합니다.
-3. **실행**을 클릭합니다.
+이 프로젝트의 **공식 GitHub Releases**에서 다운로드했다면 앱 이름이 `CC69_Threads_Manager.exe`인지 확인하고, Windows 안내를 확인한 뒤 실행 여부를 결정하세요.
 
-반드시 공식 Releases에서만 다운로드하세요. 필요하면 SHA-256으로 파일을 확인할 수 있습니다.
+필요하면 SHA-256으로 실행 파일을 확인할 수 있습니다.
 
 ```powershell
 Get-FileHash .\CC69_Threads_Manager.exe -Algorithm SHA256
@@ -67,7 +66,7 @@ Get-FileHash .\CC69_Threads_Manager.exe -Algorithm SHA256
 
 Release 패키지의 `CC69_Threads_Manager.exe.sha256` 값과 비교하세요.
 
-> Windows Defender 또는 다른 백신이 SmartScreen과 별도로 구체적인 악성코드 탐지를 표시한다면 별개의 경고입니다. 무시하지 말고 확인하세요.
+> Windows Defender 또는 다른 백신이 SmartScreen과 별도로 **구체적인 악성코드 이름이나 탐지 결과**를 표시한다면 별개의 경고입니다. 무시하지 말고 별도로 확인하세요.
 
 ## 🔐 로그인 및 개인정보
 
