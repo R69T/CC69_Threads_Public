@@ -46,27 +46,55 @@
 **https://github.com/R69T/CC69_Threads_Public/releases/latest** から `CC69_Threads_Manager_vX.X.X_Windows.zip` をダウンロードし、展開後 `CC69_Threads_Manager.exe` を実行してください。
 
 <a id="windows-smartscreen"></a>
-## 🛡️ Windows SmartScreen
+## 🛡️ Windows SmartScreen｜初回起動前にご確認ください
 
 <p align="center"><img src="assets/windows-smartscreen-real.png" alt="Windows によって PC が保護されました - CC69 Threads Manager" width="540"></p>
 
-上の画像は、CC69 を初めて起動したときに表示される場合がある**実際の Microsoft Defender SmartScreen 画面**です。アプリ名 `CC69_Threads_Manager.exe` と「不明な発行元」に相当する表示が出る場合があります。
+上の画像は、CC69 を初めて起動したときに**実際に表示される場合がある Microsoft Defender SmartScreen 画面**です。次のような表示が出ることがあります。
 
-CC69 は現在、**商用 Windows コード署名証明書を使用していません**。そのため Windows は、信頼済みのデジタル署名で発行元を確認できません。
+- **「Windows によって PC が保護されました」**
+- アプリ：`CC69_Threads_Manager.exe`
+- 発行元：**不明な発行元 / Unknown publisher**
 
-> **この SmartScreen 画面だけで、Windows が CC69 をウイルスとして検出したという意味ではありません。** 主に「Windows が確認できる商用コード署名／既存の発行元評価がない」という警告です。
+### なぜこの画面が表示されるのですか？
 
-本プロジェクトの**公式 GitHub Releases**からダウンロードした場合は、アプリ名が `CC69_Threads_Manager.exe` であることを確認し、Windows の案内を見て実行するか判断してください。
+CC69 は現在、**商用 Windows Code Signing 証明書を使用していません**。そのため Windows は、信頼済みのデジタル署名から発行元を確認できません。また、アプリの SmartScreen 評判がまだ十分に蓄積されていない場合にも警告が表示されることがあります。
 
-必要に応じて SHA-256 も確認できます。
+> **重要：この SmartScreen の「不明な発行元」画面だけで、Windows が CC69 をウイルスとして検出したという意味ではありません。**
+>
+> 主に「商用コード署名証明書／既存の発行元評価で、この EXE の発行元を Windows が確認できない」という意味です。
+
+### 公式 GitHub Releases からダウンロードした場合
+
+まず、このプロジェクトの公式 Releases からダウンロードしたことと、Windows 画面に表示されているアプリ名が次の通りであることを確認してください。
+
+`CC69_Threads_Manager.exe`
+
+Windows が最初に **「実行しない」** だけを表示する SmartScreen 画面を出した場合：
+
+1. **「詳細情報」**をクリック
+2. アプリ名が `CC69_Threads_Manager.exe` であることを確認
+3. **「実行」／「実行する」**に相当する選択肢が表示されたら、自分で確認したうえで実行するか判断してください
+
+### ファイルをさらに確認したい場合：SHA-256
+
+PowerShell で次を実行します。
 
 ```powershell
 Get-FileHash .\CC69_Threads_Manager.exe -Algorithm SHA256
 ```
 
-Release パッケージ内の `CC69_Threads_Manager.exe.sha256` と比較してください。
+その結果を Release ZIP に含まれる：
 
-> Windows Defender や別のウイルス対策ソフトが、SmartScreen とは別に**具体的なマルウェア名や検出結果**を表示した場合は別の警告です。無視せず、別途確認してください。
+`CC69_Threads_Manager.exe.sha256`
+
+と比較してください。値が一致すれば、手元の EXE がその Release で配布されたファイルと一致していることを確認できます。
+
+### SmartScreen と実際のウイルス検出は別です
+
+Windows Defender や別のウイルス対策ソフトが、SmartScreen とは別に **具体的なマルウェア名、Trojan、Malware、PUA などの検出結果**を表示した場合は、単なる「不明な発行元」警告とは異なります。その場合は無視せず、配布元とファイルを別途確認してください。
+
+**CC69 は、このプロジェクトの公式 GitHub Releases からのみダウンロードすることをおすすめします。**
 
 ## 🔐 ログインとプライバシー
 
