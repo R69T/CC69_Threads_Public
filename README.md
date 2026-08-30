@@ -98,7 +98,7 @@ Release 會附 SHA-256 核對檔。
 <a id="windows-smartscreen"></a>
 ## 🛡️ Windows 安全提示｜第一次執行請先看
 
-<p align="center"><img src="assets/windows-smartscreen-real.png" alt="Windows 已保護您的電腦 - CC69 Threads Manager" width="540"></p>
+<p align="center"><img src="assets/windows-smartscreen-zh.png" alt="Windows 已保護您的電腦 - CC69 Threads Manager" width="540"></p>
 
 上圖就是 CC69 第一次執行時**實際可能出現的 Microsoft Defender SmartScreen 畫面**。你可能會看到：
 

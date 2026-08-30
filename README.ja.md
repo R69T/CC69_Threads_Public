@@ -48,7 +48,7 @@
 <a id="windows-smartscreen"></a>
 ## 🛡️ Windows SmartScreen｜初回起動前にご確認ください
 
-<p align="center"><img src="assets/windows-smartscreen-real.png" alt="Windows によって PC が保護されました - CC69 Threads Manager" width="540"></p>
+<p align="center"><img src="assets/windows-smartscreen-ja.png" alt="Windows によって PC が保護されました - CC69 Threads Manager" width="540"></p>
 
 上の画像は、CC69 を初めて起動したときに**実際に表示される場合がある Microsoft Defender SmartScreen 画面**です。次のような表示が出ることがあります。
 

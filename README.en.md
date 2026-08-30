@@ -48,7 +48,7 @@ Go to **https://github.com/R69T/CC69_Threads_Public/releases/latest**, download 
 <a id="windows-smartscreen"></a>
 ## 🛡️ Windows SmartScreen｜Read this before first launch
 
-<p align="center"><img src="assets/windows-smartscreen-real.png" alt="Windows protected your PC - CC69 Threads Manager" width="540"></p>
+<p align="center"><img src="assets/windows-smartscreen-en.png" alt="Windows protected your PC - CC69 Threads Manager" width="540"></p>
 
 The image above is the **real Microsoft Defender SmartScreen screen** that may appear the first time CC69 is launched. You may see:
 

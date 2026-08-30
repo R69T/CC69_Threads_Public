@@ -48,7 +48,7 @@
 <a id="windows-smartscreen"></a>
 ## 🛡️ Windows SmartScreen｜처음 실행하기 전에 확인하세요
 
-<p align="center"><img src="assets/windows-smartscreen-real.png" alt="Windows의 PC 보호 - CC69 Threads Manager" width="540"></p>
+<p align="center"><img src="assets/windows-smartscreen-ko.png" alt="Windows의 PC 보호 - CC69 Threads Manager" width="540"></p>
 
 위 이미지는 CC69를 처음 실행할 때 **실제로 표시될 수 있는 Microsoft Defender SmartScreen 화면**입니다. 다음과 같은 내용이 표시될 수 있습니다.
 
