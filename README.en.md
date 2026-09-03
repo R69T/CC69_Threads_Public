@@ -11,6 +11,22 @@
   <a href="#windows-smartscreen"><strong>🛡️ Windows Safety</strong></a>
 </p>
 
+## 📢 Latest Fix Notice｜2026-09-03
+
+Thank you to everyone who has patiently tested CC69 again and again, and thank you for continuing to report issues found during real-world use.
+
+CC69 has now addressed several known problems, including:
+
+- **Large accounts sometimes retrieving incomplete Followers / Following lists during Quick Scan.**
+- **The app appearing to stop responding or remain stuck after relationship data was only partially retrieved.**
+- **Large Followers / Following lists reaching the end incompletely and preventing users from continuing cleanup.**
+
+The latest version includes changes specifically aimed at these situations. We still need more testing across accounts of different sizes to continue improving stability.
+
+**We sincerely ask you to give CC69 another chance: please keep using it, testing it, and sending us feedback. Every report helps us make CC69 more stable. Thank you.**
+
+---
+
 ## ✨ CC69 at a glance
 
 <p align="center"><img src="assets/EN%20PROM.png" alt="CC69 Threads Manager overview" width="100%"></p>
